@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@500&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+body{
+    font-family: 'Black Han Sans','Open Sans', sans-serif;
+}
+/* header */
+.welcom-header{
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.welcom-header__title{
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.welcom-header__text{
+    width:65%;
+    opacity: 0.5;
+    font-weight: 600px;
+}
+
+/* login-form */
+#login-form{
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction:column;
+    margin:0px 30px;
+}
+#login-form input{
+    border:none;
+    padding: 15px 0px ;
+    margin-bottom: 25px;
+    font-size:20px;
+    
+    
+}
+
+#login-form input:not([type="submit"]){
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+    
+}
+
+#login-form input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+#login-form input:focus {
+    border-color: var(--yellow);
+
+}
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor:pointer;
+    border-radius:5px;
+    font-family: 'Black Han Sans','Open Sans', sans-serif;
+}
+#login-form a{
+    display:flex;
+    justify-content: center;
+    text-decoration:none;
+    color: inherit;
+    font-size:13px;
+}
